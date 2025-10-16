@@ -2,7 +2,7 @@
 
 int main()
 {
-	int n1=0,n2=1,next,num,i=0;
+int n1=0,n2=1,next,num,i=0;
  printf("enter number of elements");
  scanf("%d",&num);
  for(i=0;i<num;i++){
