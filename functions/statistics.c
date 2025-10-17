@@ -3,17 +3,18 @@
 int mean(int arr[],int n){
     arr[n];
     float mean=0,var=0,sum=0.00;
+
     for(int i=0;i<n;i++){
         mean +=arr[i];
     }
+
     mean = mean/n;
     printf("mean is %.3f \n",mean);
-    for(int i=0;i<n;i++){
 
-        
-        sum =sum+((arr[i]-mean)*(arr[i]-mean));
-   
-    }
+    for(int i=0;i<n;i++){
+     sum =sum+((arr[i]-mean)*(arr[i]-mean));
+       }
+
     var=sum/n;
     printf("variance is %f \n",var);
     
