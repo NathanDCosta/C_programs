@@ -1,11 +1,22 @@
+//c program to find mean,mode,variance using arrays
 #include<stdio.h>
 int mean(int arr[],int n){
-    float mean=0;
+    arr[n];
+    float mean=0,var=0,sum=0.00;
     for(int i=0;i<n;i++){
         mean +=arr[i];
     }
-    mean = mean/2;
-    printf("%.3f",mean);
+    mean = mean/n;
+    printf("mean is %.3f \n",mean);
+    for(int i=0;i<n;i++){
+
+        
+        sum =sum+((arr[i]-mean)*(arr[i]-mean));
+   
+    }
+    var=sum/n;
+    printf("variance is %f \n",var);
+    
 
 }
 int mode(int arr[],int n){
@@ -28,7 +39,7 @@ int mode(int arr[],int n){
     }
     if(maxcount==1){
    
-          printf("no mode");
+          printf("There is no mode");
     }
     else{
       
@@ -38,8 +49,9 @@ int mode(int arr[],int n){
 }
  int main(){
     int n;
-    printf("enter number of elemnts in array");
+    printf("enter number of elements in array : ");
     scanf("%d",&n);
+       printf("\nenter elements of array : ");
     int arr[n];
      for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
