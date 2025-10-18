@@ -1,0 +1,16 @@
+# Ignore compiled files
+*.o
+*.exe
+*.out
+
+# Ignore editor backup files
+*~
+*.swp
+
+# Ignore OS-specific files
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# Ignore build directories (if any)
+/build
+/bin
